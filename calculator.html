@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>
+     calculator
+  </title>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="contener">
+   <form name="calculator">
+       <input type="text" name="screen" disabled class="inpt">
+	   <hr>
+	   <input type="button" value="&radic;" class="btn" onclick="calculator.screen.value=Math.sqrt(calculator.screen.value)">
+	   <input type="button" value="CE" class="btn" onclick="calculator.screen.value = ''">
+	   <input type="button" value="C" class="btn" onclick="calculator.screen.value = ''">
+	   <input type="button" value="&larr;" class="btn" onclick="calculator.screen.value = calculator.screen.value.slice(0,-1)"> </br>
+	   
+	   <input type="button" value="7" class="btn" onclick="calculator.screen.value +='7'">
+	   <input type="button" value="8" class="btn" onclick="calculator.screen.value +='8'">
+	   <input type="button" value="9" class="btn" onclick="calculator.screen.value +='9'">
+	   <input type="button" value="+" class="btn" onclick="calculator.screen.value +='+'"> </br>
+	   
+	   <input type="button" value="4" class="btn" onclick="calculator.screen.value +='4'">
+	   <input type="button" value="5" class="btn" onclick="calculator.screen.value +='5'">
+	   <input type="button" value="6" class="btn" onclick="calculator.screen.value +='6'">
+	   <input type="button" value="-" class="btn" onclick="calculator.screen.value +='-'"> </br>
+	   
+	   <input type="button" value="1" class="btn" onclick="calculator.screen.value +='1'">
+	   <input type="button" value="2" class="btn" onclick="calculator.screen.value +='2'">
+	   <input type="button" value="3" class="btn" onclick="calculator.screen.value +='3'">
+	   <input type="button" value="*" class="btn" onclick="calculator.screen.value +='*'"> </br>
+	   
+	   <input type="button" value="0" class="btn" onclick="calculator.screen.value +='0'">
+	   <input type="button" value="." class="btn" onclick="calculator.screen.value +='.'">
+	   <input type="button" value="=" class="btn" onclick="calculator.screen.value = eval(calculator.screen.value)">
+	   <input type="button" value="/" class="btn" onclick="calculator.screen.value +='/'"> </br>
+   </form>
+   </div>
+</body>
+</html>
